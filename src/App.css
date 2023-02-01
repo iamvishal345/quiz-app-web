@@ -173,3 +173,8 @@ header {
   position: relative;
   top: 60px;
 }
+
+footer {
+  margin-top: auto;
+  margin-bottom: 1rem;
+}
