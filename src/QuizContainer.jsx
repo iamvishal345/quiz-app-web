@@ -9,7 +9,7 @@ export const QuizContainer = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [timeLeft, setTimeLeft] = useState(30);
   const score = useRef(0);
-  const [showResult, setShowResult] = useState(false);
+  const [showResult, setShowResult] = useState(true);
   const [optionError, setOptionError] = useState(-1);
   const [optionSuccess, setOptionSuccess] = useState(-1);
   const intervalRef = useRef(null);
@@ -61,7 +61,7 @@ export const QuizContainer = () => {
 
   if (showResult) {
     return (
-      <>
+      <div style={{ marginTop: "4rem" }}>
         <header className="header">Country Quiz</header>
 
         <div className="result-container">
@@ -75,7 +75,7 @@ export const QuizContainer = () => {
             Try Again
           </button>
         </div>
-      </>
+      </div>
     );
   }
 
